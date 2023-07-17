@@ -1,0 +1,46 @@
+# This the solution to FISHBASH Ques in Python
+# Author: Param Shah (SeNSeI007) :)
+#
+
+str1 = "fish"
+str2 = "bash"
+
+def physical(num,a,stri):
+  sum_str = ''
+  while(num != 0):
+    div = num % 10
+    if(div == a):
+      sum_str += stri
+      break
+    num //= 10
+  return sum_str
+
+def print_arr_fish_bash(n,a,b):
+  arr = []
+  for i in range(1,n+1):
+    sum_str = ""
+    sum_phy_1 = physical(i,a,str1)
+    sum_phy_2 = physical(i,b,str2)
+    if(sum_phy_1 != ''):
+      sum_str += sum_phy_1
+    if(sum_phy_2 != ''):
+      sum_str += sum_phy_2
+    if(len(sum_str) < 8):
+      if(sum_str == str1):
+        if(i % b == 0):
+          sum_str += str2
+      elif(sum_str == str2):
+        if(i % a == 0):
+          sum_str += str1
+      elif(sum_str == ''):
+        if((i % a == 0) and (i % b == 0)):
+          sum_str = str1 + str2
+        elif(i % a == 0):
+          sum_str += str1
+        elif(i % b == 0):
+          sum_str += str2
+    if(sum_str != ''):
+      arr += [sum_str]
+    else:
+      arr += [i]
+  print(arr)
