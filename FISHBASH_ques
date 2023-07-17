@@ -1,0 +1,21 @@
+Write a program which will take 3 positive numbers as input: n, A and B. The program prints an array of numbers starting from 1 to n.
+With certain rules:
+1) Whenever a number is divisible by A instead of that number the string "FISH" should appear
+2) Whenever a number is divisible by B instead of that number the string "BASH" should appear
+3) Whenever a number is divisible by both A and B instead of that number the string "FISHBASH" should appear
+4) Whenever a number has A number physically present in it the string "FISH" should appear
+5) Whenever a number has B number physically present in it the string "BASH" should appear
+6) Whenever a number has both A number and B number physically present in it the string "FISHBASH" should appear
+
+name the function print_arr_fish_bash(n,A,B).
+
+Requires:
+* A and B to be a single digit number
+
+Examples:
+print_arr_fish_bash(10,3,9) -> [1, 2, 'fish', 4, 5, 'fish', 7, 8, 'bashfish', 10]
+print_arr_fish_bash(20,2,7) -> [1, 'fish', 3, 'fish', 5, 'fish', 'bash', 'fish', 9, 'fish', 11, 'fish', 13, 'fishbash', 15, 'fish', 'bash', 'fish', 19, 'fish']
+print_arr_fish_bash(100,4,5) -> [1, 2, 3, 'fish', 'bash', 6, 7, 'fish', 9, 'bash', 11, 'fish', 13, 'fish', 'bash', 'fish', 17, 18, 19, 'fishbash', 21, 22, 23, 'fish', 'bash', 26, 27, 'fish', 29, 'bash', 31, 'fish', 33, 'fish', 'bash', 'fish', 37, 38, 39, 'fishbash', 'fish', 'fish', 'fish', 'fish', 'fishbash', 'fish', 'fish', 'fish', 'fish', 'bash', 'bash', 'bashfish', 'bash', 'fishbash', 'bash', 'bashfish', 'bash', 'bash', 'bash', 'fishbash', 61, 62, 63, 'fish', 'bash', 66, 67, 'fish', 69, 'bash', 71, 'fish', 73, 'fish', 'bash', 'fish', 77, 78, 79, 'fishbash', 81, 82, 83, 'fish', 'bash', 86, 87, 'fish', 89, 'bash', 91, 'fish', 93, 'fish', 'bash', 'fish', 97, 98, 99, 'fishbash']
+
+
+
