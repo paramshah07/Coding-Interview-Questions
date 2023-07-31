@@ -1,0 +1,12 @@
+Write a program to input an array, sort it and then arrange the elements of that array in a way similar to the motion of
+pendulum, to and fro.
+
+1) The minimum element out of the list of integers, must come in the center position of the array.
+2) The number in the ascending order next to the minimum, goes to the right, the next higher number
+   goes to the left of the minimum number and it continues.
+3) As higher numbers are reached, one goes to one side in a to-and-fro manner similar to that of a Pendulum.
+
+Examples:
+
+Input numbers: 1   3   2   5   4
+Output Array : [5,3,1,2,4]
